@@ -1,0 +1,22 @@
+{
+	"variables": [],
+	"info": {
+		"name": "getCountsMonthly",
+		"_postman_id": "f6ac0c22-0932-ffe7-a4a4-b04fc9ca568d",
+		"description": "get all user counts monthwise.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "countofuser_monthwise",
+			"request": {
+				"url": "",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "get montly count of user based on the date of birth."
+			},
+			"response": []
+		}
+	]
+}

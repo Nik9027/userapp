@@ -1,0 +1,283 @@
+{
+	"variables": [],
+	"info": {
+		"name": "DeleteUserRecord",
+		"_postman_id": "8ccf4f30-aaf0-42c3-0168-e90d558e0cbd",
+		"description": "test case to delete API of user.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "DeleteUser_Successful",
+			"request": {
+				"url": {
+					"raw": "localhost:8080/app/user?id=2019-026-1002",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"app",
+						"user"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2019-026-1002",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": "try to delete user with ID that does exist."
+			},
+			"response": [
+				{
+					"id": "3a01e7e6-686c-44c3-811f-145f39917410",
+					"name": "DeleteUser_Successfull",
+					"originalRequest": {
+						"url": {
+							"raw": "localhost:8080/app/user?id=2019-026-1002",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"app",
+								"user"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2019-026-1002",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "access-control-allow-origin",
+							"key": "access-control-allow-origin",
+							"value": "*",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json;charset=UTF-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sat, 26 Jan 2019 16:33:47 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "transfer-encoding",
+							"key": "transfer-encoding",
+							"value": "chunked",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"name": "vary",
+							"key": "vary",
+							"value": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						}
+					],
+					"cookie": [],
+					"responseTime": 18,
+					"body": "[{\"fname\":\"john\",\"lname\":\"doe\",\"email\":\"john@gmail.com\",\"pincode\":\"700408\",\"birthdate\":\"03-Feb-1991\",\"active\":true,\"userID\":\"2019-026-1001\"},{\"fname\":\"abc\",\"lname\":\"xyx\",\"email\":\"abc@gmail.com\",\"pincode\":\"700408\",\"birthdate\":\"03-Dec-1992\",\"active\":true,\"userID\":\"2019-026-1003\"}]"
+				}
+			]
+		},
+		{
+			"name": "DeleteUser_IncorrectID",
+			"request": {
+				"url": {
+					"raw": "localhost:8080/app/user?id=2019-026-1005",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"app",
+						"user"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2019-026-1005",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": "try to delete user with ID that does not exist."
+			},
+			"response": [
+				{
+					"id": "a53cfe57-639e-4e43-bf45-6265fb688adb",
+					"name": "DeleteUser_Successfull",
+					"originalRequest": {
+						"url": {
+							"raw": "localhost:8080/app/user?id=2019-026-1002",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"app",
+								"user"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2019-026-1002",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "access-control-allow-origin",
+							"key": "access-control-allow-origin",
+							"value": "*",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json;charset=UTF-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sat, 26 Jan 2019 16:33:47 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "transfer-encoding",
+							"key": "transfer-encoding",
+							"value": "chunked",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"name": "vary",
+							"key": "vary",
+							"value": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						}
+					],
+					"cookie": [],
+					"responseTime": 18,
+					"body": "[{\"fname\":\"john\",\"lname\":\"doe\",\"email\":\"john@gmail.com\",\"pincode\":\"700408\",\"birthdate\":\"03-Feb-1991\",\"active\":true,\"userID\":\"2019-026-1001\"},{\"fname\":\"abc\",\"lname\":\"xyx\",\"email\":\"abc@gmail.com\",\"pincode\":\"700408\",\"birthdate\":\"03-Dec-1992\",\"active\":true,\"userID\":\"2019-026-1003\"}]"
+				},
+				{
+					"id": "d38b5c3d-3645-4bef-9a00-9f757734fb52",
+					"name": "DeleteUser_IncorrectID",
+					"originalRequest": {
+						"url": {
+							"raw": "localhost:8080/app/user?id=2019-026-1005",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"app",
+								"user"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2019-026-1005",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "access-control-allow-origin",
+							"key": "access-control-allow-origin",
+							"value": "*",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "close",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json;charset=UTF-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sat, 26 Jan 2019 16:35:22 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "transfer-encoding",
+							"key": "transfer-encoding",
+							"value": "chunked",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"name": "vary",
+							"key": "vary",
+							"value": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						}
+					],
+					"cookie": [],
+					"responseTime": 16,
+					"body": "{\"resMsg\":\"Can not update user with given id as id does not exist\",\"userId\":\"2019-026-1005\",\"valErrors\":[]}"
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,900 @@
+{
+	"variables": [],
+	"info": {
+		"name": "insertdata",
+		"_postman_id": "716ebbe8-9d35-fa4b-d070-7e0d6e90342f",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "InsertUserData_Pass",
+			"request": {
+				"url": {
+					"raw": "localhost:8080/app/user?fname=john&lname=doe&email=john@gmail.com&birthdate=03-Feb-1991&pincode=700408",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"app",
+						"user"
+					],
+					"query": [
+						{
+							"key": "fname",
+							"value": "john",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "lname",
+							"value": "doe",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "email",
+							"value": "john@gmail.com",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "birthdate",
+							"value": "03-Feb-1991",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "pincode",
+							"value": "700408",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"description": "Positive test case to insert data of user."
+			},
+			"response": [
+				{
+					"id": "47d2ef26-c72d-4241-9c35-97b547e80655",
+					"name": "InsertUserData",
+					"originalRequest": {
+						"url": {
+							"raw": "localhost:8080/app/user?fname=john&lname=doe&email=john@gmail.com&birthdate=03-Feb-1991&pincode=700408",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"app",
+								"user"
+							],
+							"query": [
+								{
+									"key": "fname",
+									"value": "john",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "lname",
+									"value": "doe",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "email",
+									"value": "john@gmail.com",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "birthdate",
+									"value": "03-Feb-1991",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "pincode",
+									"value": "700408",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "POST",
+						"header": [],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "access-control-allow-origin",
+							"key": "access-control-allow-origin",
+							"value": "*",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json;charset=UTF-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sat, 26 Jan 2019 15:43:37 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "transfer-encoding",
+							"key": "transfer-encoding",
+							"value": "chunked",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"name": "vary",
+							"key": "vary",
+							"value": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						}
+					],
+					"cookie": [],
+					"responseTime": 51,
+					"body": "{\"fname\":\"john\",\"lname\":\"doe\",\"email\":\"john@gmail.com\",\"pincode\":\"700408\",\"birthdate\":\"03-Feb-1991\",\"active\":true,\"userID\":\"2019-026-1001\"}"
+				}
+			]
+		},
+		{
+			"name": "InsertUserData_EmailAlreadyExist",
+			"request": {
+				"url": {
+					"raw": "localhost:8080/app/user?fname=john&lname=doe&email=john@gmail.com&birthdate=03-Feb-1991&pincode=700408",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"app",
+						"user"
+					],
+					"query": [
+						{
+							"key": "fname",
+							"value": "john",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "lname",
+							"value": "doe",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "email",
+							"value": "john@gmail.com",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "birthdate",
+							"value": "03-Feb-1991",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "pincode",
+							"value": "700408",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"description": "Positive test case to insert data of user."
+			},
+			"response": [
+				{
+					"id": "feb40aa3-6ce2-4b44-9e23-a83b9d388f1c",
+					"name": "InsertUserData",
+					"originalRequest": {
+						"url": {
+							"raw": "localhost:8080/app/user?fname=john&lname=doe&email=john@gmail.com&birthdate=03-Feb-1991&pincode=700408",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"app",
+								"user"
+							],
+							"query": [
+								{
+									"key": "fname",
+									"value": "john",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "lname",
+									"value": "doe",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "email",
+									"value": "john@gmail.com",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "birthdate",
+									"value": "03-Feb-1991",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "pincode",
+									"value": "700408",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "POST",
+						"header": [],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "access-control-allow-origin",
+							"key": "access-control-allow-origin",
+							"value": "*",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json;charset=UTF-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sat, 26 Jan 2019 15:43:37 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "transfer-encoding",
+							"key": "transfer-encoding",
+							"value": "chunked",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"name": "vary",
+							"key": "vary",
+							"value": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						}
+					],
+					"cookie": [],
+					"responseTime": 51,
+					"body": "{\"fname\":\"john\",\"lname\":\"doe\",\"email\":\"john@gmail.com\",\"pincode\":\"700408\",\"birthdate\":\"03-Feb-1991\",\"active\":true,\"userID\":\"2019-026-1001\"}"
+				},
+				{
+					"id": "39c0c7c5-3922-468f-929e-bb7b50a7a525",
+					"name": "InsertUserData_EmailAlreadyExist",
+					"originalRequest": {
+						"url": {
+							"raw": "localhost:8080/app/user?fname=john&lname=doe&email=john@gmail.com&birthdate=03-Feb-1991&pincode=700408",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"app",
+								"user"
+							],
+							"query": [
+								{
+									"key": "fname",
+									"value": "john",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "lname",
+									"value": "doe",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "email",
+									"value": "john@gmail.com",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "birthdate",
+									"value": "03-Feb-1991",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "pincode",
+									"value": "700408",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "POST",
+						"header": [],
+						"body": {}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "access-control-allow-origin",
+							"key": "access-control-allow-origin",
+							"value": "*",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "close",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json;charset=UTF-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sat, 26 Jan 2019 16:06:20 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "transfer-encoding",
+							"key": "transfer-encoding",
+							"value": "chunked",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"name": "vary",
+							"key": "vary",
+							"value": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						}
+					],
+					"cookie": [],
+					"responseTime": 15,
+					"body": "{\"resMsg\":\"User with this email id already exist.\",\"userId\":\"N.A\",\"valErrors\":[]}"
+				}
+			]
+		},
+		{
+			"name": "insertUserData_ValidationFail",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8080/app/user?fname=nik&lname=sha&email=dsagmail.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"app",
+						"user"
+					],
+					"query": [
+						{
+							"key": "fname",
+							"value": "nik",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "lname",
+							"value": "sha",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "email",
+							"value": "dsagmail.com",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "birthdate",
+							"value": "null",
+							"equals": true,
+							"description": "",
+							"disabled": true
+						},
+						{
+							"key": "pincode",
+							"value": "pincode",
+							"equals": true,
+							"description": "",
+							"disabled": true
+						},
+						{
+							"key": "userid",
+							"value": "",
+							"equals": false,
+							"description": "",
+							"disabled": true
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "check for data validation while inserting the data."
+			},
+			"response": [
+				{
+					"id": "5c709d64-33d5-4681-a73e-147e38e587a9",
+					"name": "http://localhost:8080/app/user?fname=nik&lname=sha&email=dsagmail.com",
+					"originalRequest": {
+						"url": {
+							"raw": "http://localhost:8080/app/user?fname=nik&lname=sha&email=dsagmail.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"app",
+								"user"
+							],
+							"query": [
+								{
+									"key": "fname",
+									"value": "nik",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "lname",
+									"value": "sha",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "email",
+									"value": "dsagmail.com",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "birthdate",
+									"value": "null",
+									"equals": true,
+									"description": "",
+									"disabled": true
+								},
+								{
+									"key": "pincode",
+									"value": "pincode",
+									"equals": true,
+									"description": "",
+									"disabled": true
+								},
+								{
+									"key": "userid",
+									"value": "",
+									"equals": false,
+									"description": "",
+									"disabled": true
+								}
+							],
+							"variable": []
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "access-control-allow-origin",
+							"key": "access-control-allow-origin",
+							"value": "*",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "close",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json;charset=UTF-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sat, 26 Jan 2019 15:53:03 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "transfer-encoding",
+							"key": "transfer-encoding",
+							"value": "chunked",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"name": "vary",
+							"key": "vary",
+							"value": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						}
+					],
+					"cookie": [],
+					"responseTime": 26,
+					"body": "{\"resMsg\":\"Validation error has occured while inserting the user record.\",\"userId\":\"N.A\",\"valErrors\":[{\"code\":\"50003\",\"field\":\"email\",\"message\":\"Not a valid emailid\"},{\"code\":\"50005\",\"field\":\"birthdate\",\"message\":\"null User birthdate can not be null or empty or a future date and must in format dd-MM-yyyy i.e. 23-01-2019\"},{\"code\":\"50004\",\"field\":\"pincode\",\"message\":\"null Not a valid pincode\"}]}"
+				}
+			]
+		},
+		{
+			"name": "insertUserData_FutureDate",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8080/app/user?fname=john&lname=doe&email=dsa@gmail.com&birthdate=30-Mar-2019&pincode=500687",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"app",
+						"user"
+					],
+					"query": [
+						{
+							"key": "fname",
+							"value": "john",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "lname",
+							"value": "doe",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "email",
+							"value": "dsa@gmail.com",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "birthdate",
+							"value": "30-Mar-2019",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "pincode",
+							"value": "500687",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "userid",
+							"value": "",
+							"equals": false,
+							"description": "",
+							"disabled": true
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "check for data validation while inserting the data."
+			},
+			"response": [
+				{
+					"id": "700a451d-2f3a-4aea-8595-f6071c5b45ba",
+					"name": "http://localhost:8080/app/user?fname=nik&lname=sha&email=dsagmail.com",
+					"originalRequest": {
+						"url": {
+							"raw": "http://localhost:8080/app/user?fname=nik&lname=sha&email=dsagmail.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"app",
+								"user"
+							],
+							"query": [
+								{
+									"key": "fname",
+									"value": "nik",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "lname",
+									"value": "sha",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "email",
+									"value": "dsagmail.com",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "birthdate",
+									"value": "null",
+									"equals": true,
+									"description": "",
+									"disabled": true
+								},
+								{
+									"key": "pincode",
+									"value": "pincode",
+									"equals": true,
+									"description": "",
+									"disabled": true
+								},
+								{
+									"key": "userid",
+									"value": "",
+									"equals": false,
+									"description": "",
+									"disabled": true
+								}
+							],
+							"variable": []
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "access-control-allow-origin",
+							"key": "access-control-allow-origin",
+							"value": "*",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "close",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json;charset=UTF-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sat, 26 Jan 2019 15:53:03 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "transfer-encoding",
+							"key": "transfer-encoding",
+							"value": "chunked",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"name": "vary",
+							"key": "vary",
+							"value": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						}
+					],
+					"cookie": [],
+					"responseTime": 26,
+					"body": "{\"resMsg\":\"Validation error has occured while inserting the user record.\",\"userId\":\"N.A\",\"valErrors\":[{\"code\":\"50003\",\"field\":\"email\",\"message\":\"Not a valid emailid\"},{\"code\":\"50005\",\"field\":\"birthdate\",\"message\":\"null User birthdate can not be null or empty or a future date and must in format dd-MM-yyyy i.e. 23-01-2019\"},{\"code\":\"50004\",\"field\":\"pincode\",\"message\":\"null Not a valid pincode\"}]}"
+				},
+				{
+					"id": "05a5511e-f195-4baa-9314-ce05b81f7849",
+					"name": "insertUserData_FutureDate",
+					"originalRequest": {
+						"url": {
+							"raw": "http://localhost:8080/app/user?fname=john&lname=doe&email=dsa@gmail.com&birthdate=30-Mar-2019&pincode=500687",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"app",
+								"user"
+							],
+							"query": [
+								{
+									"key": "fname",
+									"value": "john",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "lname",
+									"value": "doe",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "email",
+									"value": "dsa@gmail.com",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "birthdate",
+									"value": "30-Mar-2019",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "pincode",
+									"value": "500687",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "userid",
+									"value": "",
+									"equals": false,
+									"description": "",
+									"disabled": true
+								}
+							],
+							"variable": []
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "access-control-allow-origin",
+							"key": "access-control-allow-origin",
+							"value": "*",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "close",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json;charset=UTF-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sat, 26 Jan 2019 16:01:11 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "transfer-encoding",
+							"key": "transfer-encoding",
+							"value": "chunked",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"name": "vary",
+							"key": "vary",
+							"value": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						}
+					],
+					"cookie": [],
+					"responseTime": 16,
+					"body": "{\"resMsg\":\"Validation error has occured while inserting the user record.\",\"userId\":\"N.A\",\"valErrors\":[{\"code\":\"50005\",\"field\":\"birthdate\",\"message\":\"User birthdate can not be null or empty or a future date and must in format dd-MM-yyyy i.e. 23-01-2019\"}]}"
+				}
+			]
+		}
+	]
+}

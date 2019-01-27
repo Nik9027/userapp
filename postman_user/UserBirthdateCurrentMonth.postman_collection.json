@@ -1,0 +1,97 @@
+{
+	"variables": [],
+	"info": {
+		"name": "UserBirthdateCurrentMonth",
+		"_postman_id": "2e0f498b-8adc-444b-ebcb-37a05127621f",
+		"description": "test case to get user list whose birthdate comes in current month.\n",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "userlistcurrentmonth",
+			"request": {
+				"url": "localhost:8080/app/user/count",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "get list of user whose birthdate comes in current month."
+			},
+			"response": [
+				{
+					"id": "92a938f0-0ac9-44db-8f4d-d46c28edd9cb",
+					"name": "userlistcurrentmonth",
+					"originalRequest": {
+						"url": "localhost:8080/app/user",
+						"method": "GET",
+						"header": [],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json;charset=UTF-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sat, 26 Jan 2019 16:38:58 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "transfer-encoding",
+							"key": "transfer-encoding",
+							"value": "chunked",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						}
+					],
+					"cookie": [],
+					"responseTime": 19,
+					"body": "[{\"fname\":\"john\",\"lname\":\"xyx\",\"email\":\"xyz@gmail.com\",\"pincode\":\"700408\",\"birthdate\":\"29-Jan-1998\",\"active\":true,\"userID\":\"2019-026-1005\"},{\"fname\":\"abc\",\"lname\":\"xyx\",\"email\":\"abcd@gmail.com\",\"pincode\":\"700408\",\"birthdate\":\"03-Jan-1992\",\"active\":true,\"userID\":\"2019-026-1004\"}]"
+				},
+				{
+					"id": "0c8a5279-a296-4660-8c29-c2f01ec77007",
+					"name": "userlistcurrentmonth",
+					"originalRequest": {
+						"url": "localhost:8080/app/user/count",
+						"method": "GET",
+						"header": [],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json;charset=UTF-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sat, 26 Jan 2019 16:41:30 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "transfer-encoding",
+							"key": "transfer-encoding",
+							"value": "chunked",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						}
+					],
+					"cookie": [],
+					"responseTime": 22,
+					"body": "{\"January\":2,\"February\":1,\"March\":0,\"April\":0,\"May\":0,\"June\":0,\"July\":0,\"August\":0,\"September\":0,\"October\":0,\"November\":0,\"December\":1}"
+				}
+			]
+		}
+	]
+}

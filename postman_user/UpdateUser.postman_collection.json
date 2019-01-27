@@ -1,0 +1,1230 @@
+{
+	"variables": [],
+	"info": {
+		"name": "UpdateUser",
+		"_postman_id": "e4fac49a-7cf4-e684-2495-768948bd796a",
+		"description": "Use API to update user data with user ID.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "UpdateUser_Success",
+			"request": {
+				"url": {
+					"raw": "localhost:8080/app/user?id=2019-026-1001&birthdate=07-FEB-1990&pincode=123123",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"app",
+						"user"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2019-026-1001",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "birthdate",
+							"value": "07-FEB-1990",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "pincode",
+							"value": "123123",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {},
+				"description": "Successfully updated user birthdate and pincode with existing userid."
+			},
+			"response": [
+				{
+					"id": "558f25a3-5403-4320-82ca-d7f8e0b35285",
+					"name": "UpdateUser_Success",
+					"originalRequest": {
+						"url": {
+							"raw": "localhost:8080/app/user?id=2019-026-1001&birthdate=07-FEB-1990&pincode=123123",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"app",
+								"user"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2019-026-1001",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "birthdate",
+									"value": "07-FEB-1990",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "pincode",
+									"value": "123123",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "access-control-allow-origin",
+							"key": "access-control-allow-origin",
+							"value": "*",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json;charset=UTF-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sat, 26 Jan 2019 16:07:56 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "transfer-encoding",
+							"key": "transfer-encoding",
+							"value": "chunked",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"name": "vary",
+							"key": "vary",
+							"value": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						}
+					],
+					"cookie": [],
+					"responseTime": 16,
+					"body": "{\"fname\":\"john\",\"lname\":\"doe\",\"email\":\"john@gmail.com\",\"pincode\":\"123123\",\"birthdate\":\"07-FEB-1990\",\"active\":true,\"userID\":\"2019-026-1001\"}"
+				}
+			]
+		},
+		{
+			"name": "UpdateUser_IDNotExist",
+			"request": {
+				"url": {
+					"raw": "localhost:8080/app/user?id=2019-026-1005&birthdate=07-FEB-1990&pincode=123123",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"app",
+						"user"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2019-026-1005",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "birthdate",
+							"value": "07-FEB-1990",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "pincode",
+							"value": "123123",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {},
+				"description": "try update user birthdate and pincode with userid that doesnot exist."
+			},
+			"response": [
+				{
+					"id": "4b83d78b-295d-4b83-9878-9b588d82db49",
+					"name": "UpdateUser_Success",
+					"originalRequest": {
+						"url": {
+							"raw": "localhost:8080/app/user?id=2019-026-1001&birthdate=07-FEB-1990&pincode=123123",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"app",
+								"user"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2019-026-1001",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "birthdate",
+									"value": "07-FEB-1990",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "pincode",
+									"value": "123123",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "access-control-allow-origin",
+							"key": "access-control-allow-origin",
+							"value": "*",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json;charset=UTF-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sat, 26 Jan 2019 16:07:56 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "transfer-encoding",
+							"key": "transfer-encoding",
+							"value": "chunked",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"name": "vary",
+							"key": "vary",
+							"value": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						}
+					],
+					"cookie": [],
+					"responseTime": 16,
+					"body": "{\"fname\":\"john\",\"lname\":\"doe\",\"email\":\"john@gmail.com\",\"pincode\":\"123123\",\"birthdate\":\"07-FEB-1990\",\"active\":true,\"userID\":\"2019-026-1001\"}"
+				},
+				{
+					"id": "60f5fc26-192a-409b-8ef8-aa08ca423173",
+					"name": "UpdateUser_IDNotExist",
+					"originalRequest": {
+						"url": {
+							"raw": "localhost:8080/app/user?id=2019-026-1005&birthdate=07-FEB-1990&pincode=123123",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"app",
+								"user"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2019-026-1005",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "birthdate",
+									"value": "07-FEB-1990",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "pincode",
+									"value": "123123",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "access-control-allow-origin",
+							"key": "access-control-allow-origin",
+							"value": "*",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "close",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json;charset=UTF-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sat, 26 Jan 2019 16:18:13 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "transfer-encoding",
+							"key": "transfer-encoding",
+							"value": "chunked",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"name": "vary",
+							"key": "vary",
+							"value": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						}
+					],
+					"cookie": [],
+					"responseTime": 20,
+					"body": "{\"resMsg\":\"Can not update user with given id as id does not exist\",\"userId\":\"2019-026-1005\",\"valErrors\":[]}"
+				}
+			]
+		},
+		{
+			"name": "UpdateUser_InvalidDateError",
+			"request": {
+				"url": {
+					"raw": "localhost:8080/app/user?id=2019-026-1001&birthdate=07-FEB-2023&pincode=123123",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"app",
+						"user"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2019-026-1001",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "birthdate",
+							"value": "07-FEB-2023",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "pincode",
+							"value": "123123",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {},
+				"description": "Try to update user data with invalid date."
+			},
+			"response": [
+				{
+					"id": "fa1a9270-bf74-4eb3-b707-ad590e57f94e",
+					"name": "UpdateUser_Success",
+					"originalRequest": {
+						"url": {
+							"raw": "localhost:8080/app/user?id=2019-026-1001&birthdate=07-FEB-1990&pincode=123123",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"app",
+								"user"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2019-026-1001",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "birthdate",
+									"value": "07-FEB-1990",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "pincode",
+									"value": "123123",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "access-control-allow-origin",
+							"key": "access-control-allow-origin",
+							"value": "*",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json;charset=UTF-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sat, 26 Jan 2019 16:07:56 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "transfer-encoding",
+							"key": "transfer-encoding",
+							"value": "chunked",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"name": "vary",
+							"key": "vary",
+							"value": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						}
+					],
+					"cookie": [],
+					"responseTime": 16,
+					"body": "{\"fname\":\"john\",\"lname\":\"doe\",\"email\":\"john@gmail.com\",\"pincode\":\"123123\",\"birthdate\":\"07-FEB-1990\",\"active\":true,\"userID\":\"2019-026-1001\"}"
+				},
+				{
+					"id": "4840d44f-b7db-4047-a7ab-5c0242ed36db",
+					"name": "UpdateUser_InvalidDateError",
+					"originalRequest": {
+						"url": {
+							"raw": "localhost:8080/app/user?id=2019-026-1001&birthdate=07-FEB-2023&pincode=123123",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"app",
+								"user"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2019-026-1001",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "birthdate",
+									"value": "07-FEB-2023",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "pincode",
+									"value": "123123",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "access-control-allow-origin",
+							"key": "access-control-allow-origin",
+							"value": "*",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "close",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json;charset=UTF-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sat, 26 Jan 2019 16:10:31 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "transfer-encoding",
+							"key": "transfer-encoding",
+							"value": "chunked",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"name": "vary",
+							"key": "vary",
+							"value": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						}
+					],
+					"cookie": [],
+					"responseTime": 17,
+					"body": "{\"resMsg\":\"Error occured while updating the user data\",\"userId\":\"2019-026-1001\",\"valErrors\":[{\"code\":\"50005\",\"field\":\"birthdate\",\"message\":\"User birthdate can not be null or empty or a future date and must in format dd-MM-yyyy i.e. 23-01-2019\"}]}"
+				}
+			]
+		},
+		{
+			"name": "UpdateUser_InvalidPincodeError",
+			"request": {
+				"url": {
+					"raw": "localhost:8080/app/user?id=2019-026-1001&birthdate=07-FEB-1995&pincode=pincode",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"app",
+						"user"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2019-026-1001",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "birthdate",
+							"value": "07-FEB-1995",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "pincode",
+							"value": "pincode",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {},
+				"description": "Try to update user data with invalid pincode."
+			},
+			"response": [
+				{
+					"id": "645fef48-a31d-450e-81cb-84f390d6f6d7",
+					"name": "UpdateUser_Success",
+					"originalRequest": {
+						"url": {
+							"raw": "localhost:8080/app/user?id=2019-026-1001&birthdate=07-FEB-1990&pincode=123123",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"app",
+								"user"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2019-026-1001",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "birthdate",
+									"value": "07-FEB-1990",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "pincode",
+									"value": "123123",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "access-control-allow-origin",
+							"key": "access-control-allow-origin",
+							"value": "*",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json;charset=UTF-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sat, 26 Jan 2019 16:07:56 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "transfer-encoding",
+							"key": "transfer-encoding",
+							"value": "chunked",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"name": "vary",
+							"key": "vary",
+							"value": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						}
+					],
+					"cookie": [],
+					"responseTime": 16,
+					"body": "{\"fname\":\"john\",\"lname\":\"doe\",\"email\":\"john@gmail.com\",\"pincode\":\"123123\",\"birthdate\":\"07-FEB-1990\",\"active\":true,\"userID\":\"2019-026-1001\"}"
+				},
+				{
+					"id": "52bb6014-6067-4890-bf8c-7396e15fca98",
+					"name": "UpdateUser_InvalidDateError",
+					"originalRequest": {
+						"url": {
+							"raw": "localhost:8080/app/user?id=2019-026-1001&birthdate=07-FEB-2023&pincode=123123",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"app",
+								"user"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2019-026-1001",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "birthdate",
+									"value": "07-FEB-2023",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "pincode",
+									"value": "123123",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "access-control-allow-origin",
+							"key": "access-control-allow-origin",
+							"value": "*",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "close",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json;charset=UTF-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sat, 26 Jan 2019 16:10:31 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "transfer-encoding",
+							"key": "transfer-encoding",
+							"value": "chunked",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"name": "vary",
+							"key": "vary",
+							"value": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						}
+					],
+					"cookie": [],
+					"responseTime": 17,
+					"body": "{\"resMsg\":\"Error occured while updating the user data\",\"userId\":\"2019-026-1001\",\"valErrors\":[{\"code\":\"50005\",\"field\":\"birthdate\",\"message\":\"User birthdate can not be null or empty or a future date and must in format dd-MM-yyyy i.e. 23-01-2019\"}]}"
+				},
+				{
+					"id": "2565eb23-f940-4ba9-bb26-f41a4383d73b",
+					"name": "UpdateUser_InvalidPincodeError",
+					"originalRequest": {
+						"url": {
+							"raw": "localhost:8080/app/user?id=2019-026-1001&birthdate=07-FEB-1995&pincode=pincode",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"app",
+								"user"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2019-026-1001",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "birthdate",
+									"value": "07-FEB-1995",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "pincode",
+									"value": "pincode",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "access-control-allow-origin",
+							"key": "access-control-allow-origin",
+							"value": "*",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "close",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json;charset=UTF-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sat, 26 Jan 2019 16:11:35 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "transfer-encoding",
+							"key": "transfer-encoding",
+							"value": "chunked",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"name": "vary",
+							"key": "vary",
+							"value": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						}
+					],
+					"cookie": [],
+					"responseTime": 17,
+					"body": "{\"resMsg\":\"Error occured while updating the user data\",\"userId\":\"2019-026-1001\",\"valErrors\":[{\"code\":\"50004\",\"field\":\"pincode\",\"message\":\"Not a valid pincode\"}]}"
+				}
+			]
+		},
+		{
+			"name": "UpdateUser_BothPincode&dateNull",
+			"request": {
+				"url": {
+					"raw": "localhost:8080/app/user?id=2019-026-1001&birthdate=07-FEB-1995&pincode=pincode",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"app",
+						"user"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2019-026-1001",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "birthdate",
+							"value": "07-FEB-1995",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "pincode",
+							"value": "pincode",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {},
+				"description": "Try to update user data when both pincode and birthdate are null."
+			},
+			"response": [
+				{
+					"id": "923e3ba6-84eb-48c7-b73b-0f89376fbfaf",
+					"name": "UpdateUser_Success",
+					"originalRequest": {
+						"url": {
+							"raw": "localhost:8080/app/user?id=2019-026-1001&birthdate=07-FEB-1990&pincode=123123",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"app",
+								"user"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2019-026-1001",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "birthdate",
+									"value": "07-FEB-1990",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "pincode",
+									"value": "123123",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "access-control-allow-origin",
+							"key": "access-control-allow-origin",
+							"value": "*",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json;charset=UTF-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sat, 26 Jan 2019 16:07:56 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "transfer-encoding",
+							"key": "transfer-encoding",
+							"value": "chunked",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"name": "vary",
+							"key": "vary",
+							"value": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						}
+					],
+					"cookie": [],
+					"responseTime": 16,
+					"body": "{\"fname\":\"john\",\"lname\":\"doe\",\"email\":\"john@gmail.com\",\"pincode\":\"123123\",\"birthdate\":\"07-FEB-1990\",\"active\":true,\"userID\":\"2019-026-1001\"}"
+				},
+				{
+					"id": "54d34841-b12e-404d-85ac-5fb47059efe7",
+					"name": "UpdateUser_InvalidDateError",
+					"originalRequest": {
+						"url": {
+							"raw": "localhost:8080/app/user?id=2019-026-1001&birthdate=07-FEB-2023&pincode=123123",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"app",
+								"user"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2019-026-1001",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "birthdate",
+									"value": "07-FEB-2023",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "pincode",
+									"value": "123123",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "access-control-allow-origin",
+							"key": "access-control-allow-origin",
+							"value": "*",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "close",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json;charset=UTF-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sat, 26 Jan 2019 16:10:31 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "transfer-encoding",
+							"key": "transfer-encoding",
+							"value": "chunked",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"name": "vary",
+							"key": "vary",
+							"value": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						}
+					],
+					"cookie": [],
+					"responseTime": 17,
+					"body": "{\"resMsg\":\"Error occured while updating the user data\",\"userId\":\"2019-026-1001\",\"valErrors\":[{\"code\":\"50005\",\"field\":\"birthdate\",\"message\":\"User birthdate can not be null or empty or a future date and must in format dd-MM-yyyy i.e. 23-01-2019\"}]}"
+				},
+				{
+					"id": "cb0091d4-5f39-4b73-8c3b-f205ba07a0c7",
+					"name": "UpdateUser_InvalidPincodeError",
+					"originalRequest": {
+						"url": {
+							"raw": "localhost:8080/app/user?id=2019-026-1001&birthdate=07-FEB-1995&pincode=pincode",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"app",
+								"user"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2019-026-1001",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "birthdate",
+									"value": "07-FEB-1995",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "pincode",
+									"value": "pincode",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "access-control-allow-origin",
+							"key": "access-control-allow-origin",
+							"value": "*",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "close",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json;charset=UTF-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sat, 26 Jan 2019 16:11:35 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "transfer-encoding",
+							"key": "transfer-encoding",
+							"value": "chunked",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"name": "vary",
+							"key": "vary",
+							"value": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						}
+					],
+					"cookie": [],
+					"responseTime": 17,
+					"body": "{\"resMsg\":\"Error occured while updating the user data\",\"userId\":\"2019-026-1001\",\"valErrors\":[{\"code\":\"50004\",\"field\":\"pincode\",\"message\":\"Not a valid pincode\"}]}"
+				},
+				{
+					"id": "393e7ba5-e914-4d25-90e5-cf71e8ac7570",
+					"name": "UpdateUser_BothPincode&dateNull",
+					"originalRequest": {
+						"url": {
+							"raw": "localhost:8080/app/user?id=2019-026-1001",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"app",
+								"user"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2019-026-1001",
+									"equals": true,
+									"description": ""
+								},
+								{
+									"key": "birthdate",
+									"value": "07-FEB-1995",
+									"equals": true,
+									"description": "",
+									"disabled": true
+								},
+								{
+									"key": "pincode",
+									"value": "pincode",
+									"equals": true,
+									"description": "",
+									"disabled": true
+								}
+							],
+							"variable": []
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "access-control-allow-origin",
+							"key": "access-control-allow-origin",
+							"value": "*",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "close",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json;charset=UTF-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sat, 26 Jan 2019 16:16:17 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "transfer-encoding",
+							"key": "transfer-encoding",
+							"value": "chunked",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"name": "vary",
+							"key": "vary",
+							"value": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						}
+					],
+					"cookie": [],
+					"responseTime": 30,
+					"body": "{\"resMsg\":\"Validation error has occured while updating the user record.\",\"userId\":\"N.A\",\"valErrors\":[{\"code\":\"50007\",\"field\":\"birthdate,pincode\",\"message\":\"Atleast enter birthdate or pincode for update.\"}]}"
+				}
+			]
+		}
+	]
+}
